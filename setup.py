@@ -3,14 +3,16 @@ from distutils.core import setup
 setup(
   name = 'hbcapi',         # How you named your package folder (MyLib)
   packages = ['hbcapi'],   # Chose the same as "name"
-  version = '0.0.4',      # Start with a small number and increase it with every change you make
+  version = '0.0.5',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'The official hydrogenbotsclub api wrapper',   # Give a short description about your library
   author = 'hydrogenbotsclub',                   # Type in your name
   author_email = 'hydrogen.studio.llc@gmail.com',      # Type in your E-Mail
   url = 'https://api.hydrogenbots.club',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/hydrogen-studio/hbcapi-py/archive/0.0.4.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/hydrogen-studio/hbcapi-py/archive/0.0.5.tar.gz',    # I explain this later on
   keywords = ['hydrogenbotsclub', 'discord', 'club', 'hydrogen', 'hydrogenstudio'],   # Keywords that define your package best
+  long_description="https://api.hydrogenbots.club/hbcapi-python/documentation",
+  long_description_content_type="text/markdown",
   install_requires=[            # I get to this in a second
           'requests'
       ],
