@@ -1,0 +1,1 @@
+The official wrapper for hydrogenbots.club api in python. Read documentation [here](https://api.hydrogenbots.club)
