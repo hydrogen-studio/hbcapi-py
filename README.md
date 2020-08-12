@@ -10,7 +10,7 @@ This is the official api wrapper for hydrogenbots.club
 
 `pip install hbcapi`
 
-## define
+## define the library in your code
 
 ```py
 import hbcapi
