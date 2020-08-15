@@ -1,4 +1,5 @@
 import requests
+import json
 class access:
     def __init__(self, auth):
         ''' Constructor for this class. '''
@@ -7,9 +8,9 @@ class access:
         
  
  
-    def poststats(self, guildcount):
-        headers = { "Authorization": str(self.auth), "guildcount": str(guildcount) }
-        r = requests.post("https://hydrogenbots.club/api/v1/servercount", headers=headers)
+    def poststats(self, guild, shard):
+        headers = { "Authorization": str(self.auth), "Content-Type": "application/json" }
+        r = requests.post("https://hydrogenbots.club/api/v1/servercount", headers=headers, data=json.dumps({ "shard": shard, "guild": guild }))
         return r.content
 
     def voters(self):
